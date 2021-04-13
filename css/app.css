@@ -1,0 +1,165 @@
+* {
+    touch-action: manipulation;
+}
+
+body {
+    background-color: lightblue;
+    color: blueviolet;
+}
+
+
+/* For mobile: */
+
+header,
+div {
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 15px;
+    color: lightblue;
+}
+
+.play-game {
+    background: steelblue;
+    color: red;
+    font-size: 15px;
+    padding: 3px;
+    margin: 3px;
+    box-shadow: 2px 2px lightblue;
+    border-radius: 30px;
+}
+
+.play-game:hover {
+    font-size: 15px;
+    background: red;
+    color: black;
+    padding: 3px;
+    margin: 3px;
+    box-shadow: 2px 2px blueviolet;
+    border-radius: 30px;
+}
+
+.stats {
+    border: 1px solid;
+    margin: 0 auto;
+    width: 150px;
+    padding: 1px;
+    border-radius: 15px;
+    box-shadow: 2px 2px;
+}
+
+.board-container {
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    padding: 1px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.board-container * {
+    padding: 0;
+    margin: 0;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    background: lightblue;
+}
+
+.shown-cell {
+    background: red;
+    box-shadow: 1px 1px red;
+}
+
+.nav-game {
+    margin: 5px 20px;
+    padding: 10px;
+    font-size: 20px;
+    background: steelblue;
+    color: white;
+    font: bold;
+    box-shadow: 3px 3px white;
+}
+
+@media only screen and (min-width: 760px) {
+    /* For desktop: */
+    header,
+    div {
+        padding: 3px;
+        margin: 3px;
+        font-size: 20px;
+    }
+    .play-game {
+        padding: 3px;
+        margin: 3px;
+        box-shadow: 2px 2px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .play-game:hover {
+        padding: 3px;
+        margin: 3px;
+        box-shadow: 2px 2px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .stats {
+        border: 1px solid;
+        margin: 0 auto;
+        width: 150px;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 2px 3px;
+    }
+    .board-container {
+        border: 1px solid;
+        padding: 1px;
+        width: 165px;
+        margin: 0 auto;
+    }
+    .board-container * {
+        padding: 0;
+        margin: 0;
+    }
+    .cell {
+        width: 10px;
+        height: 10px;
+    }
+    .shown-cell {
+        box-shadow: 1px 1px;
+    }
+    .nav-game {
+        margin: 10px;
+        padding: 5px;
+        font-size: 20px;
+        box-shadow: 1px 1px;
+    }
+}
+
+
+/*backgorund body */
+
+CSSResult Skip Results Iframe EDIT ON html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
